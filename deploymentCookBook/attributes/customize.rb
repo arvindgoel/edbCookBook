@@ -10,3 +10,6 @@
 #
 #normal[:opsworks][:deploy_user][:shell] = '/bin/zsh'
 #normal[:opsworks][:deploy_user][:user] = 'deploy'
+
+
+echo "in attributes customize"
