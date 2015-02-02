@@ -3,6 +3,6 @@ if node[:opsworks][:instance][:hostname] == 'edb-php-appserver-time-micro'
     hour "6-24"
     minute "10"
     weekday "*"
-    command "cd /srv/www/myapp/current/protected/controllers && php mailing.php CronController actionSmsReminder"
+    command "cd /srv/www/myapp/current/protected/controllers && php CronController.php CronController actionSmsReminder"
   end
 end
