@@ -1,8 +1,10 @@
 if node[:opsworks][:instance][:hostname] == 'edb-php-appserver-time-micro'
   cron "job_name" do
-    hour "1"
+    hour "6,7,8,9,10,11,12,13,14,15,16,17,18"
     minute "10"
-    weekday "6"
-    command "cd /srv/www/myapp/current && php .lib/mailing.php"
+    weekday "*"
+    command "cd /srv/www/myapp/current/protected/controllers && php mailing.php CronController actionSmsReminder"
   end
 end
+
+
