@@ -3,7 +3,9 @@ if node[:opsworks][:instance][:hostname] == 'edb-php-appserver-time-micro'
     hour "6-24"
     minute "10"
     weekday "*"
-    command "cd /srv/www/myapp/current/protected && php test.php"
+    
+    command "php /srv/www/myapp/current/invitation/test.php"
+    #command "cd /srv/www/myapp/current/protected && php test.php"
     Chef::Log.info("Completed Test email send")
     
    #command "cd /srv/www/myapp/current/protected/controllers && php CronController.php CronController actionSmsReminder"
