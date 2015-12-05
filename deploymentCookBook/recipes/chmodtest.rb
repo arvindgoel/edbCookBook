@@ -5,7 +5,7 @@ execute 'chmod-runtime-fldr-cmd' do
 end
 
 execute 'chmod-asset-fldr-cmd' do
-  command "chmod 777 /srv/www/edoctorbook_test/current/images/downloads"
+  command "chmod 777 /srv/www/edoctorbook_test/current/images/uploads"
 end
 
 execute 'chmod-asset-fldr-cmd' do
